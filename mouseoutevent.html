@@ -1,0 +1,19 @@
+<html>
+<body>
+	<p>Test your mouse on me!</p>
+
+<script>
+const p = document.querySelector('p');
+p.onmouseover = logMouseOver;
+p.onmouseout = logMouseOut;
+
+function logMouseOver() {
+  p.textContent = 'MOUSE OVER detected';
+}
+
+function logMouseOut() {
+  p.textContent = 'MOUSE OUT detected';
+}
+</script>
+</body>
+</html>
